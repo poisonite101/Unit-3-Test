@@ -11,24 +11,24 @@ html{
     height: 100%;
     text-align: center;
 }
-input{
+output{
     background-color: rgb(233, 164, 16);
     color: indigo;
-    border: 2px solid  indigo;
-    box-shadow: indigo 3px 3px 3px;
-    
+    border: 2px solid indigo;
+    box-shadow: indigo 3px 3px 3px 3px;
+    margin: 2px;
 }
 
 button{
     background-color: rgb(219, 146, 50);
     color:  (41, 23, 0);
-    border: 2px solid  black;
+    border: 2px solid black;
     margin: 2px;
     font-size: 15px;
-    box-shadow: indigo 3px 3px 3px;
+    box-shadow: indigo 3px 3px 3px 3px;
 }
 form, p{
     color:rgb(236, 178, 71);
     font-size: 20px;
-    text-shadow: black 2px 2px 2px;
+    text-shadow: black 2px 2px 2px 2px;
 }
