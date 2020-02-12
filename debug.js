@@ -19,7 +19,7 @@ function test1() {
 
     //checks each grid element for the symbol in it and then moves accordingly
     for (var i = 0; i < grid.length; i++) {
-        // ch   eck = false;
+        check = false;
         if (grid[i] === "^") {
             x++;
         }
@@ -35,12 +35,11 @@ function test1() {
         pos.push(x + ", " + y);
         // console.log(x + ", " + y);
 
-
         //loop that will make sure no position is counted twice
         loop:
         for (var j = 0; j < pos.length; j++) {
-            for (var k = j + 1; k < pos.length - 1; k++) {
-                if (pos[k] === pos[j]) {
+            for (var i = j - 1; i < pos.length - 1; i++) {
+                if (pos[i] === pos[j]) {
                     continue loop;
                 }
             }
@@ -63,7 +62,7 @@ function test2() {
 
     //grid array that store all of the positions that were visited
     var grid = ["0, 0"];
-    grid = input.split("");
+    grid = input.split(" ");
 
     pos.push("0, 0");
 
